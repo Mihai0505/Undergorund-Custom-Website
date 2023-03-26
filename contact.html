@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Underground Customs</title>
+    <link rel="shortcut icon" href="img/icon.png"/>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="script.js" type="text/javascript"></script>
+</head>
+<script>
+
+</script>
+<style>
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+/*------*/
+#form2 {
+    border: 3px solid #f1f1f1;
+    font-family: Arial;
+}
+
+.container2 {
+    padding: 20px;
+    background-color: #f1f1f1;
+}
+
+input[type=text], input[type=submit] {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input[type=checkbox] {
+    margin-top: 16px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+input[type=submit]:hover {
+    opacity: 0.8;
+}
+
+</style>
+<body>
+<!--Menu-->
+	<header style="background-color:#c6e2ff">
+		<a href="index.html" id="logo"></a>
+		<a href="https://www.facebook.com/undergroundcustomsdesign/" id="fb"></a>
+		<nav>
+			<a href="#" id="menu-icon"></a>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="work.html">Work</a></li>
+				<li><a href="contact.html" class="current">Contact</a></li>
+				<li><a href="more.html">More</a></li>
+			</ul>
+		</nav>
+	</header>
+<!--Content-->
+<section>
+	<h3>Send a message</h3>
+	<div class="container">
+		<form action="https://login.yahoo.com/">
+			<label for="fname">First Name</label>
+			<input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+			<label for="lname">Last Name</label>
+			<input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+			<label for="eaddress">Email address</label>
+			<input type="text" id="eadress" name="emailaddress" placeholder="Your email address.." required>
+			<label for="country">Country</label>
+			<select id="country" name="country" required>
+				<option value="romania">Romania</option>
+				<option value="germany">Germany</option>
+				<option value="australia">Australia</option>
+				<option value="canada">Canada</option>
+				<option value="china">China</option>
+				<option value="japan">Japan</option>
+			</select>
+			<label for="subject">Subject</label>
+			<textarea id="subject" name="subject" placeholder="Write something.." style="height:200px" required></textarea>
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+<br>
+<form id="from2" action="https://login.yahoo.com/">
+	<div class="container">
+		<h3>Subscribe to our Newsletter</h3>
+		<p align="center">Keep up to date with our new offers!</p>
+	</div>
+<div class="container2" style="background-color:white">
+    <input type="text" placeholder="Name" name="name" required>
+    <input type="text" placeholder="Email address" name="mail" required>
+		<label>
+			<input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+		</label>
+</div>
+<div class="container2">
+    <input type="submit" value="Subscribe">
+</div>
+</form>
+<br><br>
+<p align="center">All rights reserved&nbsp;&#169;&nbsp;Copyright 2018</p>
+</section>
+</body>
+</html>
